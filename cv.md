@@ -16,7 +16,8 @@ I am able to learn programming myself, and if necessary I can find answers to al
 * SMM (setting up ads in Facebook)
 ## Code Example
 **Представить число в бухгалтерском виде (Вставлять пробел через каждые 3 цифры, с конца числа)**
-```javascript
+
+```
 var x=+prompt("Введите число: ");
 var copy=x;
 var copy2=x;
