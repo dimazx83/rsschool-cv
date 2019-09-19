@@ -5,6 +5,7 @@
 * Email: [dimazx83@gmail.com](dimazx83@gmail.com)
 * Phone: +375299544383
 * Telegram: @dimazx83
+
 ## Summary
 One of my main **goals** during this course is to implement my knowledge on course assignments and future projects. I am **interested** in understanding how to apply information about *JavaScript* in real life. I also expect to find information that I haven't seen on other Internet resources.
 I am able to learn programming myself, and if necessary I can find answers to almost all the questions I have. I know how to work together in the team, perform joint tasks and be responsible for the changes I have made in the project.
@@ -17,7 +18,7 @@ I am able to learn programming myself, and if necessary I can find answers to al
 ## Code Example
 **Представить число в бухгалтерском виде (Вставлять пробел через каждые 3 цифры, с конца числа)**
 
-```
+```javascript
 var x=+prompt("Введите число: ");
 var copy=x;
 var copy2=x;
