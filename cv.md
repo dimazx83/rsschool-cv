@@ -14,3 +14,75 @@ I am able to learn programming myself, and if necessary I can find answers to al
 * English level: B1
 * Web Design of landing pages, banners, interfaces. [Portfolio](https://freelance.ru/dimazx83)
 * SMM (setting up ads in Facebook)
+## Code Example
+**Представить число в бухгалтерском виде (Вставлять пробел через каждые 3 цифры, с конца числа)**
+```javascript
+var x=+prompt("Введите число: ");
+var copy=x;
+var copy2=x;
+var fir;
+
+   var check=function (x){
+   var len=0;
+   if(x!==0){
+   while (x) 
+   {
+        var lastNum = x % 10;
+        x = (x - lastNum) / 10;
+        len++;
+       
+    }
+    return len;
+    }
+    else{len=1; return len;} 
+   };
+  
+while(copy>0)
+{
+var len=check(copy);
+console.log(len);
+
+if(len%3==0)
+     {
+       fir=Math.trunc(copy/10**(len-3)); //123  456
+       console.log(fir+"a")
+       document.write(fir+" ");
+       copy%=10**(len-3);
+       console.log(copy+"b");
+     };
+     if(copy==0)
+     {
+     document.write(" ");
+     }
+
+else if(len%3==1)
+     {
+       fir=Math.trunc(copy/10**(len-1)); //1
+       console.log(fir+"c")
+       document.write(fir+" ");
+       copy%=10**(len-1);//234567
+       console.log(copy+"d");
+     };
+     if(copy==0)
+     {
+     document.write(" ");
+     }
+     
+else if(len%3==2)
+     {
+       fir=Math.trunc(copy/10**(len-2)); //1
+       console.log(fir+"e")
+       document.write(fir+" ");
+       copy%=10**(len-2);//234567
+       console.log(copy+"f");
+     };
+     if(copy==0)
+     {
+     document.write(" ");
+     }
+}
+```
+## Education
+* Currently studying in BSU, Managemet of Information Resourses
+* Have experience of solving different algorithmic tasks
+* Past courses in Html Academy, Codeacademy, read literature from different internet sources about *Javascript*
