@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resume</h1>
+        <figure></figure>
+        <figcaption>Dzmitry Piskunenka</figcaption>
+        <img src="i.jpg" alt="Photo">
+        </figure>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Summary</h2>
+                <p>One of my main <b>goals</b> during this course is to implement my knowledge on course assignments and
+                    future
+                    projects. I am <b>interested</b> in understanding how to apply information about <em>JavaScript</em>
+                    in real life.
+                    I also expect to find information that I haven't seen on other Internet resources.
+                    I am able to learn programming myself, and if necessary I can find answers to almost all the
+                    questions I
+                    have. I know how to work together in the team, perform joint tasks and be responsible for the
+                    changes I
+                    have made in the project.</p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Languages: HTML & CSS, Javascript, C++ (also a little less knowledge of C#, SQL, Python)</li>
+                    <li>Graphic: Photoshop, Figma</li>
+                    <li>English level: B1</li>
+                    <li>Web Design of landing pages, banners, interfaces. <a
+                            href="https://freelance.ru/dimazx83">Portfolio</a></li>
+                    <li>SMM (setting up ads in Facebook)</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>Currently studying in BSU, Managemet of Information Resourses</li>
+                    <li>Have experience of solving different algorithmic tasks</li>
+                    <li>Past courses in Html Academy, Codeacademy, read literature from different internet sources about
+                        <em>Javascript</em></li>
+                </ul>
+            </section>
+            <section class="code">
+                <pre>
+<code>
+                        //Представить число в бухгалтерском виде (Вставлять пробел через каждые 3 цифры, с конца числа)
+                        var x=+prompt("Введите число: ");
+                        var copy=x;
+                        var copy2=x;
+                        var fir;
+                        
+                           var check=function (x){
+                           var len=0;
+                           if(x!==0){
+                           while (x) 
+                           {
+                                var lastNum = x % 10;
+                                x = (x - lastNum) / 10;
+                                len++;
+                               
+                            }
+                            return len;
+                            }
+                            else{len=1; return len;} 
+                           };
+                          
+                        while(copy>0)
+                        {
+                        var len=check(copy);
+                        console.log(len);
+                        
+                        if(len%3==0)
+                             {
+                               fir=Math.trunc(copy/10**(len-3)); //123  456
+                               console.log(fir+"a")
+                               document.write(fir+" ");
+                               copy%=10**(len-3);
+                               console.log(copy+"b");
+                             };
+                             if(copy==0)
+                             {
+                             document.write(" ");
+                             }
+                        
+                        else if(len%3==1)
+                             {
+                               fir=Math.trunc(copy/10**(len-1)); //1
+                               console.log(fir+"c")
+                               document.write(fir+" ");
+                               copy%=10**(len-1);//234567
+                               console.log(copy+"d");
+                             };
+                             if(copy==0)
+                             {
+                             document.write(" ");
+                             }
+                             
+                        else if(len%3==2)
+                             {
+                               fir=Math.trunc(copy/10**(len-2)); //1
+                               console.log(fir+"e")
+                               document.write(fir+" ");
+                               copy%=10**(len-2);//234567
+                               console.log(copy+"f");
+                             };
+                             if(copy==0)
+                             {
+                             document.write(" ");
+                             }
+                        }
+</code>
+</pre>
+            </section>
+        </article>
+        <footer>
+            <h2>Contact info</h2>
+            <ul>
+                <li>Email: <a href="dimazx83@gmail.com">dimazx83@gmail.com</a></li>
+                <li>Phone: +375299544383</li>
+                <li>Telegram: @dimazx83</li>
+            </ul>
+        </footer>
+
+    </main>
+</body>
+
+</html>

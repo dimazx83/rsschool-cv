@@ -1,0 +1,20 @@
+body{
+    max-width: 1024px;
+}
+p, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+h1, h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px; 
+}
+main,header{
+  margin-left: 15px;  
+}
+header{
+    position: relative;
+}
+.code{
+    margin-left: 0px;
+}
